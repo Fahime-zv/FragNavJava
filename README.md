@@ -3,5 +3,5 @@ Android library for managing multiple stacks of fragments (e.g., Bottom Navigati
 
 this library impiltion whit kotlin 
 https://github.com/ncapdevi/FragNav
- .Not doc for implition whit java 
- There for Impilition whit java
+ .Not doc for implition with java 
+ There for Impilition with java
