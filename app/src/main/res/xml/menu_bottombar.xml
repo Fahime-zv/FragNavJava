@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        icon="@drawable/ic_aa11"
+
+        id="@+id/bb_menu_recents"
+        title="Recents"
+        />
+    <tab
+        icon="@drawable/ic_aa11"
+
+        id="@+id/bb_menu_favorites"
+        title="Favorites"
+        />
+    <tab
+        icon="@drawable/ic_aa11"
+
+        id="@+id/bb_menu_nearby"
+        title="Nearby"
+        />
+    <tab
+        icon="@drawable/ic_aa11"
+
+        id="@+id/bb_menu_friends"
+        title="Friends"
+        />
+    <tab
+        icon="@drawable/ic_aa11"
+        id="@+id/bb_menu_food"
+        title="Food"
+        />
+</tabs>
