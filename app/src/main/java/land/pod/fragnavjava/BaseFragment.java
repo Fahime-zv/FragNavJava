@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 
-public class basesfrag extends Fragment {
+public class BaseFragment extends Fragment {
     public static final String ARGS_INSTANCE = "com.ncapdevi.sample.argsInstance";
 
     Button mButton;

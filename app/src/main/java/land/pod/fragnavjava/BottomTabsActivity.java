@@ -11,7 +11,7 @@ import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabReselectListener;
 import com.roughike.bottombar.OnTabSelectListener;
 
-public class BottomTabsActivity extends AppCompatActivity implements basesfrag.FragmentNavigation, FragNavController.TransactionListener, FragNavController.RootFragmentListener {
+public class BottomTabsActivity extends AppCompatActivity implements BaseFragment.FragmentNavigation, FragNavController.TransactionListener, FragNavController.RootFragmentListener {
     //Better convention to properly name the indices what they are in your app
     private final int INDEX_RECENTS = FragNavController.TAB1;
     private final int INDEX_FAVORITES = FragNavController.TAB2;
@@ -32,6 +32,7 @@ public class BottomTabsActivity extends AppCompatActivity implements basesfrag.F
 //
         mNavController .setTransactionListener(this);
         mNavController.setRootFragmentListener(this);
+        mNavController.initialize(FragNavController.TAB3, savedInstanceState);
 
 //        mNavController = FragNavController.newBuilder(savedInstanceState, getSupportFragmentManager(), R.id.container)
 //                .transactionListener(this)
@@ -118,15 +119,15 @@ public class BottomTabsActivity extends AppCompatActivity implements basesfrag.F
     public Fragment getRootFragment(int index) {
         switch (index) {
             case INDEX_RECENTS:
-                return freFrag.newInstance(0);
+                return SampleFragment.newInstance(0);
             case INDEX_FAVORITES:
-                return freFrag.newInstance(0);
+                return SampleFragment.newInstance(0);
             case INDEX_NEARBY:
-                return freFrag.newInstance(0);
+                return SampleFragment.newInstance(0);
             case INDEX_FRIENDS:
-                return freFrag.newInstance(0);
+                return SampleFragment.newInstance(0);
             case INDEX_FOOD:
-                return freFrag.newInstance(0);
+                return SampleFragment.newInstance(0);
         }
         throw new IllegalStateException("Need to send an index that we know");
     }
